@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Wiki Viewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style media="screen">
+      body {
+        background-color: #607d8b;
+      }
+      .round {
+        border-radius: 5px;
+      }
+      #wrapper {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+      main {
+        flex: 1 0 auto;
+      }
+      main #random {
+        margin-top: 20px;
+      }
+      main #search-container #search[type="text"] {
+        font-size: 2em;
+        text-align: center;
+      }
+      main #search-container #search-icon {
+        margin: 1vh 0;
+      }
+      main #searchList {
+        -moz-transition: all .2s ease-in-out;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+      }
+      main #searchList:hover {
+        -moz-transition: scale(1.1);
+        -webkit-transition: scale(1.1);
+        -o-transition: scale(1.1);
+        transform: scale(1.1);
+      }
+      main #searchList p {
+        padding: 0 20px;
+      }
+      footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: .1rem;
+        background-color: #37474f;
+        color: #bdbdbd;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='root'>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script async defer src="/static/bundle.js"></script>
+  </body>
+</html>
