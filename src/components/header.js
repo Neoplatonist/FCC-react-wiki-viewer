@@ -10,8 +10,6 @@ export default class Header extends React.Component {
             <a href="" className="brand-logo center">Wikipedia Viewer</a>
           </div>
         </nav>
-
-        <div id="notification" className="orange center"></div>
       </header>
     );
   }
