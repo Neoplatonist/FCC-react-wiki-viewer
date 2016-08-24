@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import Header from './components/header';
 import Footer from './components/footer';
 
-export default class WikiViewerLive extends Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
 
